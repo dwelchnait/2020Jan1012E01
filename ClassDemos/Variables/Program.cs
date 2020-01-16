@@ -61,6 +61,8 @@ namespace Variables
             myHeight = 69.0m;
             BMI = (myWeight * ImperialBMIValue) / (myHeight * myHeight);
             Console.WriteLine($"According to your imperial weight of {myWeight:0.0} and height of {myHeight:0.00}: your BMI is {BMI:0.0}");
+
+
         }
     }
 }
