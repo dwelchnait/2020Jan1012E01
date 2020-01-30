@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BranchIf_MarinerStars", "Br
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicalConditions", "LogicalConditions\LogicalConditions.csproj", "{C72410ED-4845-4FDB-9EF1-6926E40B2E21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseDescision", "CaseDescision\CaseDescision.csproj", "{0FA96AD9-C599-412B-AC75-61AF906FF542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeQuestions", "PracticeQuestions\PracticeQuestions.csproj", "{AF9B0A75-0196-479D-93FE-F68464A6E175}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C72410ED-4845-4FDB-9EF1-6926E40B2E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C72410ED-4845-4FDB-9EF1-6926E40B2E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C72410ED-4845-4FDB-9EF1-6926E40B2E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA96AD9-C599-412B-AC75-61AF906FF542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA96AD9-C599-412B-AC75-61AF906FF542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA96AD9-C599-412B-AC75-61AF906FF542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA96AD9-C599-412B-AC75-61AF906FF542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9B0A75-0196-479D-93FE-F68464A6E175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9B0A75-0196-479D-93FE-F68464A6E175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9B0A75-0196-479D-93FE-F68464A6E175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9B0A75-0196-479D-93FE-F68464A6E175}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
