@@ -10,6 +10,7 @@ namespace CaseDescision
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\n\n Sample 1");
             string gradeLetter = "c";
             string percentageRange;
 
@@ -117,7 +118,62 @@ namespace CaseDescision
                     }
             }//eos
             Console.WriteLine($"Your grade letter ({gradeLetter}) is {percentageRange}");
-            Console.ReadKey(); //when using debugging to stop the auto close of your display
+           // Console.ReadKey(); //when using debugging to stop the auto close of your display
+
+            Console.WriteLine("\n\n Sample 2");
+            //example 2 print out the month name
+            int monthNumber = 2;
+            
+            //there is a single argument variable
+            //this single argument variable will be tested against multiple
+            //    constant values
+            //The case test is an == test ONLY!!!!!!
+            switch (monthNumber)
+            {
+                case 1:
+                    {
+                        //do any logic that is required when monthNumber is 1
+                        //this could be one line of code or 10000 lines of code
+                        Console.WriteLine("the name of the month is January.");
+                        break;
+                    }
+                case 2:
+                    {
+                        //do any logic that is required when monthNumber is 1
+                        //this could be one line of code or 10000 lines of code
+                        Console.WriteLine("the name of the month is February.");
+                        break;
+                    }
+                case 3:
+                    {
+                        //do any logic that is required when monthNumber is 1
+                        //this could be one line of code or 10000 lines of code
+                        Console.WriteLine("the name of the month is March.");
+                        break;
+                    }
+                case 4:
+                    {
+                        //do any logic that is required when monthNumber is 1
+                        //this could be one line of code or 10000 lines of code
+                        Console.WriteLine("the name of the month is April.");
+                        break;
+                    }
+                case 5:
+                    {
+                        //do any logic that is required when monthNumber is 1
+                        //this could be one line of code or 10000 lines of code
+                        Console.WriteLine("the name of the month is May.");
+                        break;
+                    }
+                default:
+                    {
+                        //this logic is done is one of the previous cases was
+                        //  not executed.
+                        //any necessary logic
+                        Console.WriteLine("too late in the year to think any more.");
+                        break;
+                    }
+            }
         }
     }
 }
