@@ -1,28 +1,41 @@
-﻿using Microsoft.Win32; //required for the OpenFileDialog
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;  //required to do file i/o
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;  //required to do file i/o
 
-namespace FileIOBrowseDialog
+namespace SpecialFolder
 {
     class Program
     {
-        //this is required for your code when using OpenFileDialog
-        [STAThread]
         static void Main(string[] args)
         {
             string Full_Path_File_Name = "";
 
-            //Is there a way to browse for a file
-            //Yes, you can call the OpenFileDialog
-            //this is the dialog open that you see on your system
-            //    when you go browsing for a file within an application
-            OpenFileDialog fd = new OpenFileDialog();
-            fd.ShowDialog();
-            Full_Path_File_Name = fd.FileName;
+
+            //you can prompt for the file name
+
+            //location
+
+            //use methods within the software to access the general special folders
+            //   of your Windows file system
+            //Documents, Downloads, Pictures, Music
+
+            //this GetFolderPath will return C:\Users\xxxx\the special foldername
+            //for the following statement C:\Users\Dwelch\Documents
+            string specialpathname = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            //Now, you must add any additional path structure to get to the specific
+            //   folder within the special folder
+            string FolderPath = specialpathname + @"\GitHub\2020Jan1012E01\";
+
+            //I will assume that the require file will always be found at the
+            //  root of the course class repository
+            Console.Write("Enter the file name ex myfile.txt\t");
+            string FileName = Console.ReadLine();
+
+            Full_Path_File_Name = FolderPath + FileName;
 
             //setup for reading a file
             //a string variable is required to receive the data
@@ -77,7 +90,7 @@ namespace FileIOBrowseDialog
                     readValue = reader.ReadLine();
                 }
             } //eof try
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 // .Message holds the error that occured during the processing
                 //     of the code in your try{....}
@@ -86,7 +99,7 @@ namespace FileIOBrowseDialog
             finally
             {
                 //this is used if you need to close a data source such as an open file
-                if(reader !=null)
+                if (reader != null)
                 reader.Close();
             }
 
