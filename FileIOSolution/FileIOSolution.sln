@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsolutePathName", "Absolut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialFolder", "SpecialFolder\SpecialFolder.csproj", "{EE625854-855C-4FE6-96B3-9EC251874223}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoColumnFile", "TwoColumnFile\TwoColumnFile.csproj", "{0238B1D9-BD98-4E27-A071-3DE089E0997B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EE625854-855C-4FE6-96B3-9EC251874223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE625854-855C-4FE6-96B3-9EC251874223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE625854-855C-4FE6-96B3-9EC251874223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0238B1D9-BD98-4E27-A071-3DE089E0997B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0238B1D9-BD98-4E27-A071-3DE089E0997B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0238B1D9-BD98-4E27-A071-3DE089E0997B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0238B1D9-BD98-4E27-A071-3DE089E0997B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
