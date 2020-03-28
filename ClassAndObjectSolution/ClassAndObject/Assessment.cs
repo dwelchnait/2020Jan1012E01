@@ -55,5 +55,41 @@ namespace ClassAndObject
             //    using the key word --> value
             set { _Comment = string.IsNullOrEmpty(value) ? null : value; }
         }
+
+        //if your class has NO constructor the system will creat an instance 
+        //AND initial all your data storage areas (data member or auto  properties) to
+        //their basic system defaults
+
+        //WARNING!!!!!!!!!!!!!!!!!!!!!!!!!
+        //IF you code one constructor, then you are responsible for ANY and ALL constructors
+        //The system will not do anything on your behalf.
+
+        //constructors
+        //constructors are used to initial the beginning state of an instance
+
+        //"Default" Constructor
+        //characteristic: no parameters
+        //coding block may or may not assign literial values to your data storage
+        public Assessment()
+        {
+            //optionally assign a literial to a data storage area
+            //notice: good coding practice is to use Properties and NOT directly
+            //    the data member
+            //Mark = 0.0;
+            //Comment = "no comment";
+        }
+
+        //"Greedie" Constructor
+        //characteristic: one parameter for each data storage item in the class
+        public Assessment(string firstname, string lastname, string assessmentname,
+                            double mark, string comment)
+        {
+            FirstName = firstname;
+            LastName = lastname;
+            AssessmentName = assessmentname;
+            Mark = mark;
+            Comment = comment;
+        }
+
     }
 }
