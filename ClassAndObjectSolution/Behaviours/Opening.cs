@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Behaviours
 {
-    public class Window
+    public class Opening
     {
         private double _Width;
-        public string Model { get; set; }
+        public string Name { get; set; }
         public double Height { get; set; }
 
         public double Width
@@ -30,16 +30,16 @@ namespace Behaviours
             }
         }
 
-        public Window()
+        public Opening()
         {
             //overriding the system defaults for numerics
             Height = 1.25;
             Width = 1.25;
         }
 
-        public Window(string model, double height, double width)
+        public Opening(string name, double height, double width)
         {
-            Model = model;
+            Name = name;
             Height = height;
             //best practice for assigning values is to go through the property
             Width = width;
@@ -65,7 +65,7 @@ namespace Behaviours
 
         public override string  ToString()
         {
-            return $"Model: {Model}  Height: {Height}   Width: {Width}";
+            return $"Name: {Name}  Height: {Height}   Width: {Width}";
         }
     }
 }

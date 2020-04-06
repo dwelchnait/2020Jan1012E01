@@ -10,47 +10,47 @@ namespace Behaviours
     {
         static void Main(string[] args)
         {
-            Window[] myWindows = new Window[10];
-            Window theInstance = null;
+            Opening[] myOpenings = new Opening[10];
+            Opening theInstance = null;
             int logicalsize = 0;
             try
             {
-                theInstance = new Window(); //default constructor
-                theInstance.Model = "2 pane gas filled";
-                myWindows[logicalsize] = theInstance;
+                theInstance = new Opening(); //default constructor
+                theInstance.Name = "2 pane gas filled";
+                myOpenings[logicalsize] = theInstance;
                 logicalsize++;
 
-                theInstance = new Window("single pane plexi-glass", 2.1, 1.0); //greedie constructor
-                myWindows[logicalsize] = theInstance;
+                theInstance = new Opening("single pane plexi-glass", 2.1, 1.0); //greedie constructor
+                myOpenings[logicalsize] = theInstance;
                 logicalsize++;
 
-                theInstance = new Window(); //default constructor
-                theInstance.Model = "2 pane tinted";
+                theInstance = new Opening(); //default constructor
+                theInstance.Name = "2 pane tinted";
                 theInstance.Height = 1.75;
                 theInstance.Width = 3.2;
-                myWindows[logicalsize] = theInstance;
+                myOpenings[logicalsize] = theInstance;
                 logicalsize++;
 
                 //display the instances of the array
                 for (int i = 0; i < logicalsize; i++)
                 {
-                    Console.WriteLine(myWindows[i].ToString());
+                    Console.WriteLine(myOpenings[i].ToString());
 
                     //play with the class behaviours
                     Console.WriteLine("\n\n Behaviours\n");
-                    Console.WriteLine($"Area: {myWindows[i].Area()}");
-                    Console.WriteLine($"Perimeter: {myWindows[i].Perimeter()}");
-                    Console.WriteLine($"Estimate: {myWindows[i].Estimate(14.95,2)}\n\n");
+                    Console.WriteLine($"Area: {myOpenings[i].Area()}");
+                    Console.WriteLine($"Perimeter: {myOpenings[i].Perimeter()}");
+                    Console.WriteLine($"Estimate: {myOpenings[i].Estimate(14.95,2)}\n\n");
                     
                 }
 
-                theInstance = new Window(); //bad width, looking for an exception
-                theInstance.Model = "bad width";
+                theInstance = new Opening(); //bad width, looking for an exception
+                theInstance.Name = "bad width";
                 theInstance.Height = 1.75;
                 theInstance.Width = -3.2;  //error
-                myWindows[logicalsize] = theInstance;
+                myOpenings[logicalsize] = theInstance;
                 logicalsize++;
-                Console.WriteLine(myWindows[logicalsize - 1].ToString());
+                Console.WriteLine(myOpenings[logicalsize - 1].ToString());
 
             }
             catch(Exception ex)
