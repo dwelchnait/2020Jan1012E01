@@ -1,6 +1,6 @@
 ﻿using Behaviours; //namespace to Opening class
 using System;
-using System.Collections.Generic;
+using System.Collections.Generic;  //needed for the List<T> class
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;

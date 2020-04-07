@@ -71,6 +71,7 @@ namespace Composition
             Console.ReadKey();
         }
 
+        //classes are reference datatypes
         static void GetWalls(Room House)
         {
             Wall theWall = new Wall();
@@ -91,6 +92,7 @@ namespace Composition
 
         static double GetValidInputNumber(string prompt)
         {
+            //methods whould be written so that they do a single task
             double number = 0.0;
             string input;
             bool good = false;
